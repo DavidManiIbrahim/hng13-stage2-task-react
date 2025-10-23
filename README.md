@@ -1,4 +1,46 @@
-# Welcome to your Lovable project
+# TicketFlow - Ticket Management App
+
+A modern, full-featured ticket management system built with React, featuring authentication, CRUD operations, analytics dashboard, and responsive design.
+
+## Features
+
+### 🔐 Authentication System
+- User registration with email validation
+- Secure login with session management
+- Auto-logout on session expiry (1 hour)
+- Session expiry warning (1 minute before timeout)
+- Protected routes for authenticated users
+
+### 🎫 Ticket Management (CRUD)
+- **Create** tickets with title, description, priority, status, and assignee
+- **Read** all tickets with status filtering
+- **Update** ticket details and status
+- **Delete** tickets
+- Input validation:
+  - Title: 5-100 characters
+  - Description: up to 2000 characters
+  - Assignee: valid email format
+  - Status transitions: enforced rules (can't go from closed to in-progress)
+
+### 📊 Analytics Dashboard
+- Real-time ticket statistics
+- Interactive charts (pie and bar charts)
+- Metrics by status: Open, In Progress, Resolved, Closed
+- Visual breakdown by priority levels
+
+### 🎨 Design Features
+- Dark gradient theme (purple to cyan)
+- Wavy SVG backgrounds
+- Glassmorphism UI cards
+- Responsive layout (max-width: 1440px)
+- Smooth animations and transitions
+- Mobile-friendly navigation
+
+### 🛡️ Error Handling
+- Form validation with clear error messages
+- Session timeout handling
+- Toast notifications for user feedback
+- Graceful error states
 
 ## Project info
 
