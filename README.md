@@ -42,6 +42,38 @@ A modern, full-featured ticket management system built with React, featuring aut
 - Toast notifications for user feedback
 - Graceful error states
 
+## Folder Structure
+
+```
+├── src/
+│   ├── components/
+│   │   ├── ui/              # shadcn-ui components
+│   │   ├── DashboardLayout.tsx
+│   │   ├── ProtectedRoute.tsx
+│   │   └── WavyBackground.tsx
+│   ├── hooks/
+│   │   ├── use-mobile.tsx
+│   │   └── use-toast.ts
+│   ├── lib/
+│   │   ├── auth.ts          # Authentication logic & session management
+│   │   ├── tickets.ts       # Ticket CRUD operations & validation
+│   │   └── utils.ts         # Utility functions
+│   ├── pages/
+│   │   ├── Dashboard.tsx    # Analytics dashboard
+│   │   ├── Landing.tsx      # Landing page
+│   │   ├── Login.tsx        # Login page
+│   │   ├── Register.tsx     # Registration page
+│   │   ├── TicketForm.tsx   # Create/Edit ticket form
+│   │   ├── Tickets.tsx      # Ticket list view
+│   │   └── NotFound.tsx     # 404 page
+│   ├── App.tsx              # Main app component & routing
+│   ├── main.tsx             # App entry point
+│   └── index.css            # Global styles & design tokens
+├── public/
+├── tailwind.config.ts       # Tailwind configuration
+└── vite.config.ts           # Vite configuration
+```
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/fe330949-26c7-4525-8b65-8f73a1ddec44
